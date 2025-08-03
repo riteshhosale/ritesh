@@ -78,23 +78,23 @@
 
   const chatBox = document.getElementById("chat-box");
 
-  // Show user message
+  
   const userMsg = document.createElement("div");
   userMsg.className = "user-msg";
   userMsg.innerText = message;
   chatBox.appendChild(userMsg);
 
-  // Get bot response
+  
   const botResponse = getBotReply(message);
   const botMsg = document.createElement("div");
   botMsg.className = "bot-msg";
   botMsg.innerText = botResponse;
   chatBox.appendChild(botMsg);
 
-  // Scroll to bottom
+  
   chatBox.scrollTop = chatBox.scrollHeight;
 
-  // Clear input
+  
   input.value = "";
 }
 
